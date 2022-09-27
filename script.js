@@ -29,8 +29,9 @@ const feed = document.querySelectorAll('[data-animate-feed]');
 const about_center = document.querySelectorAll('[data-animate-about-center]');
 const news = document.querySelectorAll('[data-animate-news]');
 const evento = document.querySelectorAll('[data-animate-event-left]');
+const evento_right = document.querySelectorAll('[data-animate-event-right]');
+const project_top = document.querySelectorAll('[data-animate-project-top]');
 const animationClass = 'animate';
-const fixtopClass = 'fixed-top';
 
 function animeScroll() {
   const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
@@ -39,50 +40,60 @@ function animeScroll() {
       element.classList.add(animationClass);
     } 
   })
-  about_left.forEach(function(element2) {
-    if((windowTop) > element2.offsetTop) {
-      element2.classList.add(animationClass);
+  about_left.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  about_right.forEach(function(element3) {
-    if((windowTop) > element3.offsetTop) {
-      element3.classList.add(animationClass);
+  about_right.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  contrast_right.forEach(function(element4){
-    if((windowTop) > element4.offsetTop) {
-      element4.classList.add(animationClass);
+  contrast_right.forEach(function(element){
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  show.forEach(function(element5) {
-    if((windowTop) > element5.offsetTop) {
-      element5.classList.add(animationClass);
+  show.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  feed.forEach(function(element6) {
-    if((windowTop) > element6.offsetTop) {
-      element6.classList.add(animationClass);
+  feed.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  about_center.forEach(function(element8) {
-    if((windowTop) > element8.offsetTop) {
-      element8.classList.add(animationClass);
+  about_center.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  news.forEach(function(element9) {
-    if((windowTop) > element9.offsetTop) {
-      element9.classList.add(animationClass);
+  news.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
-  evento.forEach(function(element9) {
-    if((windowTop) > element9.offsetTop) {
-      element9.classList.add(animationClass);
+  evento.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } 
+  })
+  evento_right.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } 
+  })
+  project_top.forEach(function(element1) {
+    if((windowTop) > element1.offsetTop) {
+      element1.classList.add(animationClass);
     } 
   })
   const windowTop2 = window.pageYOffset + ((window.innerHeight * 4) / 4);
-  about_prism.forEach(function(element10) {
-    if((windowTop2) > element10.offsetTop) {
-      element10.classList.add(animationClass);
+  about_prism.forEach(function(element) {
+    if((windowTop2) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
 }
@@ -106,6 +117,12 @@ if(evento.length) {
 }
 
 if(contrast_right.length) {
+  window.addEventListener('scroll', function() {
+    animeScroll();
+  });
+}
+
+if(project_top.length) {
   window.addEventListener('scroll', function() {
     animeScroll();
   });

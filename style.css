@@ -116,6 +116,21 @@ a:hover {
 .offcanvas-end {
     background-color: #3DCCC7;
 }
+.offcanvas-insta{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    align-items: center;
+}
+.pad{
+    padding-right: 16px;
+}
+.offcanvas-globe{
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    align-items: center;
+}
 
 /*navbar-pc-cel*/
 #jumb{
@@ -305,6 +320,13 @@ a.nav-link:focus {
         margin: 0;
     }
 
+}
+
+.about{
+    padding: 0;
+}
+#center-info{
+    padding: 0;
 }
 
 @media(min-width:1200px) and (max-width:1399px) {
@@ -1072,50 +1094,52 @@ a.nav-link:focus {
 
     #img-frame {
         position: relative;
-        width: 146px;
-        height: 130px;
+        width: 185px;
+        height: 164px;
         background: url(img/art1-mini-x.png)no-repeat;
         margin-top: 3vw;
+        border-radius: 40px;
         --numb2: calc(156.80px - 30vw);
         left: calc(19vw - var(--numb2));
     }
 
     #img-frame2 {
         position: absolute;
-        height: 99px;
-        width: 113px;
-        left: 48.696vw;
+        height: 123px;
+        width: 140px;
+        left: 52.696vw;
         margin-top: 5.348vw;
+        border-radius: 33px;
         background: url(img/art2-mini-x.png) no-repeat;
     }
 
     #img-frame-text {
         position: relative;
-        width: 146px;
-        height: 130px;
+        width: 185px;
+        height: 164px;
         margin-top: 3vw;
         background: rgba(104, 216, 214, 0.3);
         padding: 15px;
-        border-radius: 33px;
+        border-radius: 40px;
         --numb2: calc(156.80px - 30vw);
         left: calc(19vw - var(--numb2));
     }
 
     #img-frame2-text {
         position: absolute;
-        height: 99px;
-        width: 113px;
-        left: 48.696vw;
-        margin-top: 5.348vw;
+        height: 123px;
+        width: 140px;
+        left: 52.696vw;
+        margin-top: 17px;
         padding: 15px;
         background: rgba(104, 216, 214, 0.3);
-        border-radius: 27px;
+        border-radius: 33px;
     }
 
     .prisma2 {
         background: url(img/prisma2-mini-x.png) no-repeat;
-        width: 250px;
-        height: 88px;
+        width: 300px;
+        height: 91px;
         position: relative;
         --numb2: calc(156.80px - 30vw);
         left: calc(19vw - var(--numb2));
@@ -1522,7 +1546,6 @@ a.nav-link:focus {
 
     .info-alt2 h1 {
         font-size: 16px;
-        width: 179px;
         height: 26px;
         letter-spacing: 0.05em;
         margin-top: 12px;
@@ -1635,7 +1658,6 @@ a.nav-link:focus {
 
     .info-alt2 h1 {
         font-size: 14px;
-        width: 179px;
         height: 26px;
         letter-spacing: 0.05em;
         margin-top: 6px;
@@ -1674,7 +1696,7 @@ a.nav-link:focus {
         display: none;
     }
 
-    .bi-instagram {
+    .info .bi-instagram {
         display: none;
     }
 
@@ -1684,8 +1706,8 @@ a.nav-link:focus {
 
     .icon-alt {
         background: #68D8D6;
-        height: 18px;
-        width: 19px;
+        height: 25px;
+        width: 26px;
         display: flex;
         align-items: center;
         color: white;
@@ -1693,17 +1715,17 @@ a.nav-link:focus {
     }
 
     .info-alt .bi-chat-text {
-        width: 10px;
-        height: 10px;
+        width: 17px;
+        height: 17px;
     }
 
     .info-alt2 .bi-globe {
-        width: 10px;
-        height: 10px;
+        width: 14px;
+        height: 14px;
     }
 
     .info-alt h1 {
-        font-size: 6px;
+        font-size: 9.5px;
         height: 12px;
         letter-spacing: 0.05em;
         margin-top: 3px;
@@ -1711,7 +1733,7 @@ a.nav-link:focus {
     }
 
     .prisma3-alt {
-        width: 14px;
+        width: 19px;
         height: 2px;
         background: #68D8D6;
         margin-bottom: 3px;
@@ -1719,14 +1741,13 @@ a.nav-link:focus {
 
     .info-alt p {
         color: #808080;
-        line-height: 10px;
-        font-size: 6px;
+        font-size: 8.5px;
     }
 
     .icon-alt2 {
         background: #68D8D6;
-        height: 17px;
-        width: 18px;
+        height: 21px;
+        width: 22px;
         display: flex;
         align-items: center;
         color: white;
@@ -1734,8 +1755,7 @@ a.nav-link:focus {
     }
 
     .info-alt2 h1 {
-        font-size: 6px;
-        width: 179px;
+        font-size: 9px;
         height: 12px;
         letter-spacing: 0.05em;
         margin-top: 3px;
@@ -1743,7 +1763,7 @@ a.nav-link:focus {
     }
 
     .prisma3-alt2 {
-        width: 11px;
+        width: 16px;
         height: 2px;
         background: #68D8D6;
         margin-bottom: 3px;
@@ -1751,8 +1771,7 @@ a.nav-link:focus {
 
     .info-alt2 p {
         color: #808080;
-        line-height: 10px;
-        font-size: 6px;
+        font-size: 8px;
     }
 
 
@@ -2701,6 +2720,7 @@ a:link {
 
 .center {
     display: flex;
+    color: white;
     justify-content: center;
 }
 
@@ -4601,10 +4621,7 @@ transition: 500ms;
       
     }
 }
-ul{
-    padding: 0;
-    height: 100%;
-}
+
 .title{
     margin-bottom: -30px;
     margin-top: 30px;
@@ -4613,11 +4630,32 @@ ul{
     z-index: 1;
 }
 [data-animate-event-left]{
-    opacity: 0.5;
+    opacity: 0;
     transition: 500ms;
     transform: translateX(-200px);
 }
 [data-animate-event-left].animate{
     opacity: 1;
     transform: translateX(0);
+}
+[data-animate-event-right]{
+    opacity: 0;
+    transition: 500ms;
+    transform: translateX(200px);
+}
+[data-animate-event-right].animate{
+    opacity: 1;
+    transform: translateX(0);
+}
+[data-animate-project-top]{
+    opacity: 0;
+    transition: 500ms;
+    transform: translateY(-200px);
+}
+[data-animate-project-top].animate{
+    opacity: 1;
+    transform: translateY(0);
+}
+.confetti{
+    padding: 0;
 }
