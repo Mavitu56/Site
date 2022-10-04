@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="header">
-    <nav id="header-nav" class="navbar navbar-expand-lg fixed-top">
+    <nav id="header-nav"  class="navbar navbar-expand-lg fixed-top">
           <div id="header" class="container">
               <div class="navbar-header">
                   <a href="index.html" class="logo">
@@ -28,7 +28,7 @@
                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
               </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div data-navbar-top class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CTIG</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -36,9 +36,9 @@
                 
               </button>
               
-              <div class="offcanvas-body" id="navbarNav">
-                <hr class="division">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <div data-navbar-top class="offcanvas-body" id="navbarNav">
+                <div class="pad"><hr class="division"></div>
+                  <ul class="navbar-nav offcanvas-top justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                       <a class="nav-link" href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="big" viewBox="0 0 16 16">
@@ -47,19 +47,44 @@
                         </a>
                         <div class="container text-left">
                           <div class="row">
-                            <a href="index.html" class="col links">
+                            <a href="index.html" class="col-6 links">
                               Home
                             </a>
-                            <a href="#" class="col links">
-                              Jornal
-                            </a>
+                            <div class="col-6 dropdown">
+                              <a class="links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Atividades
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
                           </div>
-
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="https://www.instagram.com/ctig.unesp/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="big" viewBox="0 0 16 16">
                         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                       </svg></a>
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-6 dropdown">
+                            <a class="links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Jornal
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                          <a href="Comunicados.html" class="col-6 links">
+                            Comunicados
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="small" class="nav-item">
                       <div class="container text-left">
                         <div class="row">
                           <a href="Galeria.html" class="col links">
@@ -69,6 +94,7 @@
                             Eventos
                           </a>
                         </div>
+                      </div>
                     </li>
                     <li id="small" class="nav-item">
                       <div class="container text-left">
@@ -80,16 +106,38 @@
                             Albúm
                           </a>
                         </div>
+                      </div>
+                    </li>
+                    <hr class="division">
+                    <li>
+                      <div class="row">
+                        <div class="col links">
+                          <div class="offcanvas-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" class="bi bi-globe" viewBox="0 0 16 16">
+                              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"></path>
+                            </svg><a href="https://beacons.ai/ctig.unesp">Beacons</a>
+                          </div>
+                        </div>
+                        <div  class="col links">
+                          <div class="offcanvas-insta">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg><a href="https://www.instagram.com/ctig.unesp/">Instagram</a>
+                          </div>
+                        </div>
+                      </div>
+                      
                     </li>
                     <hr class="division">
                     <li class="nav-item">
-                      <form class="d-flex" role="search">
-                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                      <form class="form d-flex" role="search">
+                        <input data-form class="form-control " type="search" placeholder="Search" aria-label="Search">
                         <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg></button>
                       </form>
                     </li>
+                    
                   </ul>
                 </div>
           </div>
@@ -99,8 +147,26 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Atividades
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Jornal
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1°Edição</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Jornal</a>
+            <a class="nav-link" href="Comunicados.html">Comunicados</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Galeria.html">Galeria</a>
@@ -117,10 +183,17 @@
         </ul>
       </nav>
   </header>
-
       <div class="xs-only">
         <div data-animate-news class="faixa2 img-fluid">
-            <div data-animate-show class="photos"><h1>Álbum</h1></div>
+          <svg class="photos" viewBox="0 0 664 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 22.9776C214.5 113.469 455 -33.2067 603 58.7765" stroke="#68D8D6" stroke-width="51"/>
+            <path d="M47 44.8547L69.5 56.2905V74.1899L59 60.7654L47 44.8547Z" fill="#3DCCC7"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M76.3013 39.7155L87.5 37.2294C93.4895 29.3091 50.4539 10.3857 0.5 23.5065C2.52724 24.5946 4.44493 25.5792 6.26952 26.516C16.9327 31.9906 24.4159 35.8326 32 49.1624L32.3306 49.0919C32.3865 49.2802 32.443 49.4694 32.5 49.6597C19.4006 54.2387 12.2296 58.9889 0 74.5201C30.5212 69.0356 44.815 70.5338 69.5 74.5201C60.5854 62.209 53.4267 52.776 47.7533 45.8031L76.3013 39.7155Z" fill="#68D8D6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M603.5 57.2849C629.339 52.965 643.439 51.2365 663.5 57.2849C657.943 58.9119 653.6 61.8999 647.783 66.2978C642.952 70.2856 635.136 80.6692 635 83.6368C635 83.6369 635 83.6369 635 83.6369C635 83.6369 635 83.6369 635 83.6369C649.378 90.3823 656.061 95.3676 664 108C618.887 100.301 611.124 101.763 582.266 107.198L582.265 107.198C580.893 107.457 579.473 107.724 578 108C578.671 107.703 579.33 107.408 579.979 107.114C579.901 107.137 579.826 107.16 579.752 107.182C579.173 107.453 578.589 107.726 578 108C578.538 106.671 579.061 105.376 579.572 104.112C587.468 84.559 592.35 72.4691 603.5 57.2849Z" fill="#68D8D6"/>
+            <path d="M578 73.6927L590.5 78.6648L578 108V73.6927Z" fill="#3DCCC7"/>
+            <path d="M297.705 24.635C297.869 24.2383 298.114 23.9467 298.44 23.76C298.79 23.5733 299.14 23.48 299.49 23.48C299.724 23.48 299.91 23.515 300.05 23.585C300.61 23.865 300.89 24.2967 300.89 24.88C300.89 25.3233 300.715 25.7667 300.365 26.21L298.65 28.415H296.095L297.705 24.635ZM300.155 47.595H294.52L293.155 54H288.815L294.555 29.5H299.98L306.175 54H301.59L300.155 47.595ZM295.43 43.5H299.245L297.25 35.94L295.43 43.5ZM309.968 29.5H313.818V54H309.968V29.5ZM332.948 48.505C332.948 49.695 332.703 50.6983 332.213 51.515C331.723 52.3317 331.058 52.95 330.218 53.37C329.471 53.7433 328.713 54.0117 327.943 54.175C327.196 54.3383 326.391 54.42 325.528 54.42C324.664 54.42 323.474 54.3383 321.958 54.175L320.033 54V29.5H323.883V36.5C324.909 36.2667 325.843 36.15 326.683 36.15C327.873 36.15 328.969 36.3833 329.973 36.85C331.956 37.76 332.948 39.44 332.948 41.89V48.505ZM329.133 42.975C329.133 41.925 328.841 41.1783 328.258 40.735C327.674 40.2683 326.963 40.035 326.123 40.035C325.656 40.035 325.213 40.0933 324.793 40.21C324.373 40.3267 324.069 40.4667 323.883 40.63V50.64C324.279 50.7567 324.758 50.815 325.318 50.815C326.298 50.815 327.173 50.64 327.943 50.29C328.736 49.9167 329.133 49.345 329.133 48.575V42.975ZM344.088 53.79C344.018 53.8133 343.75 53.9183 343.283 54.105C342.816 54.2917 342.21 54.385 341.463 54.385C337.076 54.385 334.883 52.25 334.883 47.98V36.465H338.733V47.42C338.733 48.4933 338.92 49.2867 339.293 49.8C339.69 50.3133 340.413 50.57 341.463 50.57C342.513 50.57 343.213 50.29 343.563 49.73C343.913 49.1467 344.088 48.33 344.088 47.28V36.465H347.938V54H344.333L344.088 53.79ZM370.697 43.36C370.697 42.1 370.522 41.19 370.172 40.63C369.845 40.07 369.309 39.79 368.562 39.79C368.025 39.79 367.302 39.9533 366.392 40.28L365.797 40.525C365.844 40.665 365.879 40.8283 365.902 41.015C365.925 41.2017 365.937 41.3767 365.937 41.54V54H362.087V43.465C362.087 42.2983 361.819 41.4 361.282 40.77C360.745 40.14 360.022 39.825 359.112 39.825C358.295 39.825 357.444 40.0817 356.557 40.595V54H352.707V36.465H356.102L356.557 36.71C357.327 36.36 358.202 36.185 359.182 36.185C359.975 36.185 360.745 36.325 361.492 36.605C362.239 36.8617 362.892 37.2817 363.452 37.865C363.779 37.6783 364.269 37.4217 364.922 37.095C366.299 36.465 367.629 36.15 368.912 36.15C370.569 36.15 371.922 36.6633 372.972 37.69C374.022 38.6933 374.547 40.0933 374.547 41.89V54H370.697V43.36Z" fill="black"/>
+            </svg>
+            
           </div>
         </div>
 
@@ -393,6 +466,7 @@
               <script src="js/bootstrap.min.js"></script>
               <script src="jquery-3.6.0.min.js"></script>
               <script src="script.js"></script>
+              <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

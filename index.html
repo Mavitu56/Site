@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-      <nav id="header-nav" data-navbar-top class="navbar navbar-expand-lg fixed-top">
+      <nav id="header-nav"  class="navbar navbar-expand-lg fixed-top">
             <div id="header" class="container">
                 <div class="navbar-header">
                     <a href="index.html" class="logo">
@@ -38,7 +38,7 @@
                 
                 <div data-navbar-top class="offcanvas-body" id="navbarNav">
                   <div class="pad"><hr class="division"></div>
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <ul class="navbar-nav offcanvas-top justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
                         <a class="nav-link" href="index.html">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="big" viewBox="0 0 16 16">
@@ -47,19 +47,44 @@
                           </a>
                           <div class="container text-left">
                             <div class="row">
-                              <a href="index.html" class="col links">
+                              <a href="index.html" class="col-6 links">
                                 Home
                               </a>
-                              <a href="#" class="col links">
-                                Jornal
-                              </a>
+                              <div class="col-6 dropdown">
+                                <a class="links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Atividades
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
                             </div>
-
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="https://www.instagram.com/ctig.unesp/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="big" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                         </svg></a>
+                        <div class="container text-left">
+                          <div class="row">
+                            <div class="col-6 dropdown">
+                              <a class="links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Jornal
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                            <a href="Comunicados.html" class="col-6 links">
+                              Comunicados
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li id="small" class="nav-item">
                         <div class="container text-left">
                           <div class="row">
                             <a href="Galeria.html" class="col links">
@@ -69,6 +94,7 @@
                               Eventos
                             </a>
                           </div>
+                        </div>
                       </li>
                       <li id="small" class="nav-item">
                         <div class="container text-left">
@@ -80,6 +106,7 @@
                               Albúm
                             </a>
                           </div>
+                        </div>
                       </li>
                       <hr class="division">
                       <li>
@@ -103,7 +130,7 @@
                       </li>
                       <hr class="division">
                       <li class="nav-item">
-                        <form class="d-flex" role="search">
+                        <form class="form d-flex" role="search">
                           <input data-form class="form-control " type="search" placeholder="Search" aria-label="Search">
                           <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -120,8 +147,26 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Atividades
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Jornal
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1°Edição</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jornal</a>
+              <a class="nav-link" href="Comunicados.html">Comunicados</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Galeria.html">Galeria</a>
@@ -175,7 +220,16 @@
       <div class="row">
         <div id="center-info" class="col-lg-7 col-xl-5 col-xxl-6">
       <h1 data-animate-show>Sobre</h1>
-      <div data-animate-about-center class="prisma"></div>
+      <div class="prisma" data-animate-about-center>
+        <svg class="prisma-svg" viewBox="0 0 321 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_f_0_1)">
+          <path d="M318.5 114L2 60L160.4 5L318.5 234.5V114Z" fill="#D9D9D9"/>
+          </g>
+          <path d="M319 109L2.5 55L160.9 0L319 229.5V109Z" fill="#67D8D6"/>
+
+          </svg>
+          
+        </div>
       <div onclick="toggleDiv()">
       <div class="img-frameClass" data-animate-about-center id="img-frame2"></div>
       <div class="img-frameClass" id="img-frame2-text" style="display:none; transition: 500ms;">
@@ -206,8 +260,22 @@
       </div>
     </div>
   </div>
-      <div data-animate-about-prism class="prisma2 ">
-      </div>
+  <div data-animate-about-prism>
+    <svg class="prisma2" viewBox="0 0 754 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_0_1)">
+      <path d="M2 117L752 8L467 8L2 230V117Z" fill="#D9D9D9"/>
+      </g>
+      <path d="M2 109L752 0L467 0L2 222V109Z" fill="#67D8D6"/>
+      <defs>
+      <filter id="filter0_f_0_1" x="0" y="6" width="754" height="226" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_0_1"/>
+      </filter>
+      </defs>
+      </svg>
+      
+  </div>
   </div>
     <div data-animate-about-right class="col infos d-none d-sm-block">
       <div class="info">
@@ -316,8 +384,8 @@
           <h2>Título</h2>
         </div>
       </div>
-        <div data-animate-feed id="feed-row" class="row">
-          <div id="feed-col" class="col-lg-3 col-sm-6 col-12">
+        <div id="feed-row" class="row">
+          <div data-animate-feed id="feed-col" class="col-lg-3 col-sm-6 col-12">
             <div id="feed"></div>
             <h2>Título</h2>
           </div>
@@ -392,5 +460,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -12,10 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <style>
-  .confetti li{
+  @media (max-width:375px) and (min-width:320px)
+  {
+    .confetti li{
     background-color:rgba(61, 204, 199, 0.7);
     position: absolute;
-    top: 3320px;
+    top: 2170px;
     left: 0;
   }
   @keyframes up {
@@ -27,14 +29,168 @@
       opacity: 1;
     }
     to {
-      transform: translateY(-1400px) rotate(960deg);
+      transform: translateY(-470px) rotate(960deg);
       
     }
   }
+  }
+  @media (max-width:475px) and (min-width:376px)
+  {
+    .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 2080px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-470px) rotate(960deg);
+      
+    }
+  }
+  }
+  @media (max-width:579px) and (min-width:476px)
+  {
+    .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 2000px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-570px) rotate(960deg);
+      
+    }
+  }
+  }
+@media (min-width: 580px) and (max-width: 767px) { 
+  .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 2300px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-600px) rotate(960deg);
+      
+    }
+  }
+ }
+
+@media (min-width: 768px) and (max-width: 991px){ 
+  .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 2600px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-900px) rotate(960deg);
+      
+    }
+  }
+ }
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 3000px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-1100px) rotate(960deg);
+      
+    }
+  }
+ }
+
+@media (min-width: 1200px) and (max-width: 1399px) { 
+  .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 3150px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-1200px) rotate(960deg);
+      
+    }
+  }
+ }
+
+@media (min-width: 1400px) { 
+  .confetti li{
+    background-color:rgba(61, 204, 199, 0.7);
+    position: absolute;
+    top: 3300px;
+    left: 0;
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-1200px) rotate(960deg);
+      
+    }
+  }
+ }
 </style>
 <body>
   <header class="header">
-    <nav id="header-nav" class="navbar navbar-expand-lg fixed-top">
+    <nav id="header-nav"  class="navbar navbar-expand-lg fixed-top">
           <div id="header" class="container">
               <div class="navbar-header">
                   <a href="index.html" class="logo">
@@ -49,7 +205,7 @@
                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
               </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div data-navbar-top class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CTIG</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -57,9 +213,9 @@
                 
               </button>
               
-              <div class="offcanvas-body" id="navbarNav">
-                <hr class="division">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <div data-navbar-top class="offcanvas-body" id="navbarNav">
+                <div class="pad"><hr class="division"></div>
+                  <ul class="navbar-nav offcanvas-top justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                       <a class="nav-link" href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="big" viewBox="0 0 16 16">
@@ -68,19 +224,44 @@
                         </a>
                         <div class="container text-left">
                           <div class="row">
-                            <a href="index.html" class="col links">
+                            <a href="index.html" class="col-6 links">
                               Home
                             </a>
-                            <a href="#" class="col links">
-                              Jornal
-                            </a>
+                            <div class="col-6 dropdown">
+                              <a class="links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Atividades
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
                           </div>
-
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="https://www.instagram.com/ctig.unesp/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="big" viewBox="0 0 16 16">
                         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                       </svg></a>
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-6 dropdown">
+                            <a class="links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Jornal
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                          <a href="Comunicados.html" class="col-6 links">
+                            Comunicados
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="small" class="nav-item">
                       <div class="container text-left">
                         <div class="row">
                           <a href="Galeria.html" class="col links">
@@ -90,6 +271,7 @@
                             Eventos
                           </a>
                         </div>
+                      </div>
                     </li>
                     <li id="small" class="nav-item">
                       <div class="container text-left">
@@ -101,16 +283,38 @@
                             Albúm
                           </a>
                         </div>
+                      </div>
+                    </li>
+                    <hr class="division">
+                    <li>
+                      <div class="row">
+                        <div class="col links">
+                          <div class="offcanvas-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" class="bi bi-globe" viewBox="0 0 16 16">
+                              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"></path>
+                            </svg><a href="https://beacons.ai/ctig.unesp">Beacons</a>
+                          </div>
+                        </div>
+                        <div  class="col links">
+                          <div class="offcanvas-insta">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" width="16" height="16" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg><a href="https://www.instagram.com/ctig.unesp/">Instagram</a>
+                          </div>
+                        </div>
+                      </div>
+                      
                     </li>
                     <hr class="division">
                     <li class="nav-item">
-                      <form class="d-flex" role="search">
-                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                      <form class="form d-flex" role="search">
+                        <input data-form class="form-control " type="search" placeholder="Search" aria-label="Search">
                         <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg></button>
                       </form>
                     </li>
+                    
                   </ul>
                 </div>
           </div>
@@ -120,8 +324,26 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Atividades
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Jornal
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1°Edição</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Jornal</a>
+            <a class="nav-link" href="Comunicados.html">Comunicados</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Galeria.html">Galeria</a>
@@ -138,10 +360,15 @@
         </ul>
       </nav>
   </header>
-      <div class="container" id="main-content">
+      <div class="container nav-pad" id="main-content">
         <div data-animate-show class="title"><h1>Título</h1></div>
         <div class="xs-only">
-        <div data-animate-feed class="faixa img-fluid"></div>
+          <div data-animate-feed>
+            <svg class="faixa" viewBox="0 0 1286 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1233.94 156.127C1486.19 -77.5145 -47.1595 331.607 27.6539 5.99991" stroke="#C4FFF9" stroke-width="48"/>
+              <path d="M1214.08 178C1466.32 -55.6417 -51.1318 360.439 23.6817 34.8323" stroke="#68D8D6" stroke-width="42"/>
+              </svg>
+          </div>
       </div>
         <div class="text-news"> <p data-animate-news>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat quis nisl eu imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Nam magna ex, venenatis eu fringilla eu, pulvinar et tellus. Nullam ligula erat, bibendum sit amet lacinia quis, volutpat ut justo. Nam suscipit, quam quis sollicitudin commodo, lorem orci vehicula lacus, eget auctor leo quam id ligula. Fusce vel lectus luctus libero tempor lacinia. Duis tempus dui orci, ac feugiat neque iaculis a. Vestibulum quis sodales dui. Nam aliquam neque justo, vel dignissim odio sollicitudin eu. Suspendisse tincidunt dignissim luctus. Fusce vitae rhoncus justo, semper suscipit lectus. </p> <br> 
            <p data-animate-news>Pellentesque viverra magna non enim vestibulum mattis. Sed felis nisl, eleifend et pulvinar eget, porta non leo. Vivamus sed felis dolor. Nunc sit amet felis vulputate, accumsan justo vitae, semper dolor. Ut a ex elementum, condimentum diam in, aliquam mi. Nam rhoncus eros vitae diam dictum efficitur. Mauris quis dolor pellentesque quam congue luctus vitae at orci. Proin feugiat lacus in est fringilla facilisis. </p> <br> 
@@ -149,8 +376,15 @@
            <p data-animate-news> Donec egestas tempor mi sit amet pulvinar. Mauris varius interdum aliquet. Aenean a dapibus risus. Phasellus consectetur ac orci tincidunt maximus. Praesent leo sem, mattis a dignissim a, dapibus vel neque. </p>
         </div>
         <div class="xs-only">
-        <div data-animate-news class="faixa2 img-fluid">
-            <div class="photos"><h1>Fotos</h1></div>
+          <div data-animate-news="" class="faixa2">
+          <svg class="photos" viewBox="0 0 664 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 22C214.5 113 455 -34.5 603 58" stroke="#68D8D6" stroke-width="51"/>
+            <path d="M47 44L69.5 55.5V73.5L59 60L47 44Z" fill="#3DCCC7"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M76.3013 38.8318L87.5 36.3318C93.4895 28.367 50.4539 9.33729 0.5 22.5318C2.52724 23.626 4.44493 24.6161 6.26952 25.5582C16.9327 31.0636 24.4159 34.9272 32 48.3318L32.3306 48.2609C32.3865 48.4503 32.443 48.6406 32.5 48.8319C19.4006 53.4367 12.2296 58.2136 0 73.832C30.5212 68.3167 44.815 69.8233 69.5 73.832C60.5854 61.4517 53.4267 51.9657 47.7533 44.9537L76.3013 38.8318Z" fill="#68D8D6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M603.5 56.5C629.339 52.1558 643.439 50.4176 663.5 56.5C657.943 58.1361 653.6 61.141 647.783 65.5638C642.952 69.5741 635.136 80.0157 635 83C635 83 635 83 635 83C635 83 635 83 635 83C649.378 89.7833 656.061 94.7967 664 107.5C618.887 99.7573 611.124 101.228 582.266 106.694C580.894 106.954 579.474 107.223 578 107.5C578.671 107.202 579.33 106.905 579.979 106.609C579.901 106.632 579.826 106.655 579.752 106.677C579.173 106.95 578.589 107.225 578 107.5C578.538 106.164 579.06 104.863 579.57 103.593L579.572 103.59C587.468 83.9273 592.35 71.7695 603.5 56.5Z" fill="#68D8D6"/>
+            <path d="M578 73L590.5 78L578 107.5V73Z" fill="#3DCCC7"/>
+            <path d="M285.456 27H298.816V31.4H289.856V38.48H295.456L294.016 42.68H289.856V55H285.456V27ZM318.282 47.64C318.282 49.88 317.669 51.7333 316.442 53.2C315.216 54.6667 313.362 55.4 310.882 55.4C308.402 55.4 306.522 54.6667 305.242 53.2C303.989 51.7067 303.362 49.8533 303.362 47.64V42.36C303.362 39.8267 304.002 37.8933 305.282 36.56C306.589 35.2 308.456 34.52 310.882 34.52C313.202 34.52 315.016 35.2267 316.322 36.64C317.629 38.0267 318.282 39.9333 318.282 42.36V47.64ZM313.922 42.36C313.922 40.9467 313.629 40.0267 313.042 39.6C312.456 39.1733 311.736 38.96 310.882 38.96C308.802 38.96 307.762 40.0933 307.762 42.36V48.04C307.762 49.1067 308.056 49.88 308.642 50.36C309.229 50.84 309.976 51.08 310.882 51.08C311.762 51.08 312.482 50.8267 313.042 50.32C313.629 49.8133 313.922 49.0533 313.922 48.04V42.36ZM331.692 55.52C327.638 55.44 325.612 53.5067 325.612 49.72V27H330.092V34.96H333.892L332.932 39.08H330.092V49.72C330.092 50.6267 330.345 51.24 330.852 51.56C331.358 51.8533 332.078 52 333.012 52L331.692 55.52ZM356.868 47.64C356.868 49.88 356.255 51.7333 355.028 53.2C353.801 54.6667 351.948 55.4 349.468 55.4C346.988 55.4 345.108 54.6667 343.828 53.2C342.575 51.7067 341.948 49.8533 341.948 47.64V42.36C341.948 39.8267 342.588 37.8933 343.868 36.56C345.175 35.2 347.041 34.52 349.468 34.52C351.788 34.52 353.601 35.2267 354.908 36.64C356.215 38.0267 356.868 39.9333 356.868 42.36V47.64ZM352.508 42.36C352.508 40.9467 352.215 40.0267 351.628 39.6C351.041 39.1733 350.321 38.96 349.468 38.96C347.388 38.96 346.348 40.0933 346.348 42.36V48.04C346.348 49.1067 346.641 49.88 347.228 50.36C347.815 50.84 348.561 51.08 349.468 51.08C350.348 51.08 351.068 50.8267 351.628 50.32C352.215 49.8133 352.508 49.0533 352.508 48.04V42.36ZM368.278 49.48C368.278 49.96 368.518 50.4133 368.998 50.84C369.504 51.2667 370.264 51.48 371.278 51.48C372.158 51.48 372.838 51.2667 373.318 50.84C373.798 50.3867 374.038 49.8667 374.038 49.28C374.038 48.4533 373.731 47.84 373.118 47.44C372.531 47.04 371.571 46.6 370.238 46.12C369.091 45.7467 368.144 45.3733 367.398 45C366.651 44.6267 365.984 44.0667 365.398 43.32C364.811 42.5733 364.464 41.6 364.358 40.4C364.278 39.4933 364.451 38.5867 364.878 37.68C365.331 36.7467 366.078 35.9867 367.118 35.4C368.184 34.7867 369.544 34.48 371.198 34.48C372.051 34.48 372.798 34.5733 373.438 34.76C374.104 34.92 374.624 35.0933 374.998 35.28C375.371 35.4667 375.598 35.5867 375.678 35.64L374.398 39.72C374.344 39.6667 374.198 39.5733 373.958 39.44C373.744 39.28 373.398 39.1333 372.918 39C372.438 38.8667 371.864 38.8 371.198 38.8C369.758 38.8 369.038 39.2 369.038 40C369.038 40.16 369.064 40.32 369.118 40.48C369.198 40.8533 369.478 41.1733 369.958 41.44C370.438 41.68 371.144 41.9733 372.078 42.32C373.384 42.8 374.478 43.28 375.358 43.76C376.264 44.2133 377.038 44.9067 377.678 45.84C378.344 46.7467 378.678 47.92 378.678 49.36C378.678 50.4533 378.411 51.48 377.878 52.44C377.344 53.3733 376.518 54.1333 375.398 54.72C374.304 55.3067 372.931 55.6 371.278 55.6C369.758 55.6 368.438 55.3467 367.318 54.84C366.224 54.3067 365.384 53.6133 364.798 52.76C364.238 51.9067 363.931 50.96 363.878 49.92L368.278 49.48Z" fill="black"/>
+            </svg>
           </div>
         </div>
           <div class="xs-only">
@@ -179,12 +413,11 @@
                 <div data-animate-about-right id="foto" class="col-6"></div>
               </div>
             </div>
-
-            <div id="panel-empty" class="row big-frame">       
-                <div class="frame-z">
+            <div class="big-frame">
+            <div id="panel-empty" class="row">       
                   <div data-animate-news id="foto2" class="col picture"></div>
-                </div>
               </div>
+            </div>
       </div>
           </ul>
     </div>
@@ -227,6 +460,7 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="jquery-3.6.0.min.js"></script>
       <script src="script.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

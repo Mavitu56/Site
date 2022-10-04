@@ -27,10 +27,12 @@ const contrast_right = document.querySelectorAll('[data-animate-contrast-right]'
 const show = document.querySelectorAll('[data-animate-show]');
 const feed = document.querySelectorAll('[data-animate-feed]');
 const about_center = document.querySelectorAll('[data-animate-about-center]');
+const prisma = document.querySelectorAll('[data-animate-prisma]');
 const news = document.querySelectorAll('[data-animate-news]');
 const evento = document.querySelectorAll('[data-animate-event-left]');
 const evento_right = document.querySelectorAll('[data-animate-event-right]');
 const project_top = document.querySelectorAll('[data-animate-project-top]');
+const com = document.querySelectorAll('[data-animate-com]');
 const animationClass = 'animate';
 
 function animeScroll() {
@@ -70,6 +72,11 @@ function animeScroll() {
       element.classList.add(animationClass);
     } 
   })
+  prisma.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } 
+  })
   news.forEach(function(element) {
     if((windowTop) > element.offsetTop) {
       element.classList.add(animationClass);
@@ -88,6 +95,11 @@ function animeScroll() {
   project_top.forEach(function(element1) {
     if((windowTop) > element1.offsetTop) {
       element1.classList.add(animationClass);
+    } 
+  })
+  com.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
     } 
   })
   const windowTop2 = window.pageYOffset + ((window.innerHeight * 4) / 4);
@@ -127,6 +139,16 @@ if(project_top.length) {
     animeScroll();
   });
 }
+if(com.length) {
+  window.addEventListener('scroll', function() {
+    animeScroll();
+  });
+}
+if(prisma.length) {
+  window.addEventListener('scroll', function() {
+    animeScroll();
+  });
+}
 
   /* background confetti */
   const ulconfetti = document.querySelector("ul.confetti");
@@ -139,7 +161,7 @@ if(project_top.length) {
   
     const sizex = Math.floor(random(20, 30));
     const sizey = Math.floor(random(8, 12));
-    const position = random(1, 96);
+    const position = random(1, 92);
     const delay = random(5, 0.1);
   
     li.style.width = `${sizex}px`;
