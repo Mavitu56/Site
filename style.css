@@ -22,9 +22,6 @@ body {
 .logo-img {
     width: 45px;
     height: 46px;
-
-    background: url(img/CTIG-UNESP-MINIsm.png) no-repeat;
-
 }
 
 .navbar-header {
@@ -275,9 +272,6 @@ a:hover {
     .logo-img {
         width: 40px;
         height: 42px;
-
-        background: url(img/CTIG-UNESP-MINI.png) no-repeat;
-
     }
 
     .navbar-header {
@@ -314,7 +308,7 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jamboo-normal.png) no-repeat;
+        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -338,7 +332,6 @@ a.nav-link:focus {
     .logo-img-lg {
         width: 208px;
         height: 213px;
-        background: url(img/CTIG-BLACK.png) no-repeat;
     }
 
     .logo-brand h1 {
@@ -362,8 +355,8 @@ a.nav-link:focus {
 @media(min-width:1200px) and (max-width:1399px) {
     .jumbotron {
         width: 100%;
-        height: 660px;
-        background: url(img/jamboo-lg.png) no-repeat;
+        height: 580px;
+        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -375,7 +368,7 @@ a.nav-link:focus {
     }
     .container-img {
         width: 100%;
-        height: 660px;
+        height: 580px;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -386,7 +379,6 @@ a.nav-link:focus {
     .logo-img-lg {
         width: 208px;
         height: 213px;
-        background: url(img/CTIG-BLACK.png) no-repeat;
     }
 
     .logo-brand h1 {
@@ -410,7 +402,7 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jamboo_medium.png) no-repeat;
+        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -434,7 +426,6 @@ a.nav-link:focus {
     .logo-img-lg {
         width: 180px;
         height: 184px;
-        background: url(img/CTIG-BLACK_MID.png) no-repeat;
     }
 
     .logo-brand h1 {
@@ -451,7 +442,7 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jamboo_small.png) no-repeat;
+        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -476,7 +467,6 @@ a.nav-link:focus {
     .logo-img-lg {
         width: 150px;
         height: 153px;
-        background: url(img/CTIG-BLACK_SM.png) no-repeat;
     }
 
     .logo-brand h1 {
@@ -493,7 +483,7 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jamboo_small.png) no-repeat;
+        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -518,7 +508,6 @@ a.nav-link:focus {
     .logo-img-lg {
         width: 150px;
         height: 153px;
-        background: url(img/CTIG-BLACK_SM.png) no-repeat;
     }
 
     .logo-brand h1 {
@@ -530,6 +519,47 @@ a.nav-link:focus {
         margin: 0;
     }
 }
+@media(max-width:580px){
+    .jumbotron {
+        width: 100%;
+        height: 400px;
+        background: url(img/jumbtron.webp) no-repeat;
+        text-align: center;
+        vertical-align: middle;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .container .text-center {
+        width: 100%;
+    }
+
+    .container-img {
+        width: 100%;
+        height: 465px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-img-lg {
+        width: 100px;
+        height: 103px;
+    }
+
+    .logo-brand h1 {
+        font-size: 35px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        width: 200px;
+        height: 103px;
+        margin: 0;
+    }
+}
+
 /*botões cursos*/
 .cursos:active{
     transition: 200ms;
@@ -537,6 +567,15 @@ a.nav-link:focus {
     scale: 0.9;
     transform: translateY(5px);
 }
+
+.cursos h1{
+    opacity: 0;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+}
+
 @media(max-width:767px) and (min-width:580px) {
     .cursos {
         background: linear-gradient(180deg, #9CEAEF 0%, #68D8D6 100%);
@@ -549,34 +588,11 @@ a.nav-link:focus {
         display: flex;
         cursor: pointer;
     }
-    .curso-rev1 {
+    .curso-rev {
         background: url();
-        width: 37px;
-        height: 37px;
+        width: 44px;
+        height: 44px;
     }
-
-    .curso-rev2 {
-        background: url();
-        width: 37px;
-        height: 37px;
-    }
-
-    .curso-rev3 {
-        background: url();
-        width: 33px;
-        height: 37px;
-    }
-
-    .curso-rev4 {
-        background: url();
-        width: 37px;
-        height: 37px;
-    }
-
-    .cursos img {
-        display: none;
-    }
-
 
 }
 
@@ -593,33 +609,12 @@ a.nav-link:focus {
         cursor: pointer;
     }
 
-    .curso-rev1 {
+    .curso-rev {
         background: url();
-        width: 37px;
-        height: 37px;
+        width: 44px;
+        height: 44px;
     }
 
-    .curso-rev2 {
-        background: url();
-        width: 37px;
-        height: 37px;
-    }
-
-    .curso-rev3 {
-        background: url();
-        width: 33px;
-        height: 37px;
-    }
-
-    .curso-rev4 {
-        background: url();
-        width: 37px;
-        height: 37px;
-    }
-
-    .cursos img {
-        display: none;
-    }
 }
 
 @media(min-width:1400px) {
@@ -635,6 +630,12 @@ a.nav-link:focus {
         cursor: pointer;
         animation: fade 1s;
     }
+
+    .curso-rev {
+        background: url();
+        width: 88px;
+        height: 88px;
+    }
 }
 
 @media(min-width:1200px) and (max-width:1399px) {
@@ -647,7 +648,14 @@ a.nav-link:focus {
         justify-content: center;
         align-items: center;
         display: flex;
+        cursor: pointer;
         animation: fade 1s;
+    }
+
+    .curso-rev {
+        background: url();
+        width: 82px;
+        height: 82px;
     }
 
 }
@@ -666,6 +674,12 @@ a.nav-link:focus {
         animation: fade 1s;
         animation-fill-mode: backwards;
     }
+
+    .curso-rev {
+        background: url();
+        width: 72px;
+        height: 72px;
+    }
 }
 
 @media(min-width:768px) and (max-width:991px) {
@@ -679,7 +693,14 @@ a.nav-link:focus {
         align-items: center;
         display: flex;
         animation: fade 1s;
+        cursor: pointer;
         animation-fill-mode: backwards;
+    }
+
+    .curso-rev {
+        background: url();
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -735,17 +756,7 @@ a.nav-link:focus {
         position: relative;
         width: 326px;
         height: 480px;
-        background: url(img/art1.png)no-repeat;
         margin-top: 3vw;
-        cursor: pointer;
-    }
-    #img-frame-text {
-        position: relative;
-        width: 326px;
-        height: 480px;
-        background: url(img/art1.png)no-repeat;
-        margin-top: 3vw;
-        cursor: pointer;
     }
 
     #img-frame2 {
@@ -754,19 +765,8 @@ a.nav-link:focus {
         width: 246px;
         left: 34vw;
         top: 1320px;
-        background: url(img/art2.png) no-repeat;
-        cursor: pointer;
     }
-    
-    #img-frame2-text {
-        position: absolute;
-        height: 362px;
-        width: 246px;
-        left: 34vw;
-        top: 1320px;
-        background: url(img/art2.png) no-repeat;
-        cursor: pointer;
-    }
+
 
     .prisma2 {
         width: 590px;
@@ -800,15 +800,7 @@ a.nav-link:focus {
         position: relative;
         width: 326px;
         height: 480px;
-        background: url(img/art1.png)no-repeat;
-        margin-top: 3vw;
-    }
 
-    #img-frame-text {
-        position: relative;
-        width: 326px;
-        height: 480px;
-        background: url(img/art1.png)no-repeat;
         margin-top: 3vw;
     }
 
@@ -818,15 +810,6 @@ a.nav-link:focus {
         width: 246px;
         left: 31vw;
         top: 1302px;
-        background: url(img/art2.png) no-repeat;
-    }
-    #img-frame2-text {
-        position: absolute;
-        height: 362px;
-        width: 246px;
-        left: 31vw;
-        top: 1302px;
-        background: url(img/art2.png) no-repeat;
     }
 
     .prisma2 {
@@ -861,15 +844,6 @@ a.nav-link:focus {
         position: relative;
         width: 326px;
         height: 480px;
-        background: url(img/art1.png)no-repeat;
-        margin-top: 3vw;
-    }
-
-    #img-frame-text {
-        position: relative;
-        width: 326px;
-        height: 480px;
-        background: url(img/art1.png)no-repeat;
         margin-top: 3vw;
     }
 
@@ -879,15 +853,6 @@ a.nav-link:focus {
         width: 246px;
         left: 27vw;
         top: 1295px;
-        background: url(img/art2.png) no-repeat;
-    }
-    #img-frame2-text{
-        position: absolute;
-        height: 362px;
-        width: 246px;
-        left: 27vw;
-        top: 1295px;
-        background: url(img/art2.png) no-repeat;
     }
 
     .prisma2 {
@@ -907,8 +872,8 @@ a.nav-link:focus {
 @media(min-width:1200px) and (max-width:1399px) {
     .prisma {
         position: absolute;
-        left: 19.5vw;
-        top: 1080px;
+        left: 19vw;
+        top: 1010px;
         width: 295px;
         height: 148px;
     }
@@ -922,15 +887,6 @@ a.nav-link:focus {
         position: relative;
         width: 240px;
         height: 353px;
-        background: url(img/art1-lg.png)no-repeat;
-        margin-top: 3vw;
-    }
-
-    #img-frame-text {
-        position: relative;
-        width: 240px;
-        height: 353px;
-        background: url(img/art1-lg.png)no-repeat;
         margin-top: 3vw;
     }
 
@@ -938,18 +894,8 @@ a.nav-link:focus {
         position: absolute;
         height: 265px;
         width: 180px;
-        left: 24vw;
-        top: 1195px;
-        background: url(img/art2-lg.png) no-repeat;
-    }
-
-    #img-frame2-text {
-        position: absolute;
-        height: 265px;
-        width: 180px;
-        left: 24vw;
-        top: 1195px;
-        background: url(img/art2-lg.png) no-repeat;
+        left: 23vw;
+        top: 1115px;
     }
 
     .prisma2 {
@@ -983,15 +929,6 @@ a.nav-link:focus {
         position: relative;
         width: 282px;
         height: 415px;
-        background: url(img/art1-md.png)no-repeat;
-        margin-top: 3vw;
-    }
-
-    #img-frame-text {
-        position: relative;
-        width: 282px;
-        height: 415px;
-        background: url(img/art1-md.png)no-repeat;
         margin-top: 3vw;
     }
 
@@ -1001,16 +938,6 @@ a.nav-link:focus {
         width: 202px;
         left: 30vw;
         top: 1180px;
-        background: url(img/art2-md.png) no-repeat;
-    }
-
-    #img-frame2-text {
-        position: absolute;
-        height: 297px;
-        width: 202px;
-        left: 30vw;
-        top: 1180px;
-        background: url(img/art2-md.png) no-repeat;
     }
 
     .prisma2 {
@@ -1031,37 +958,35 @@ a.nav-link:focus {
     #img-frame {
         position: relative;
         width: 402px;
-        height: 296px;
-        background: url(img/art1-sm.png)no-repeat;
+        height: 100%;
         margin-top: 3vw;
     }
 
     #img-frame-text {
         position: relative;
         width: 402px;
-        height: 296px;
+        height: 358px;
         margin-top: 3vw;
         background: rgba(104, 216, 214, 0.3);
-        padding: 20px;
-        border-radius: 45px;
+        padding: 40px;
+        border-radius: 65px;
     }
 
     #img-frame2 {
         position: absolute;
-        height: 224px;
+        height: 100%;
         width: 302px;
-        left: 55vw;
+        left: 53vw;
         top: 953px;
-        background: url(img/art2-sm.png) no-repeat;
     }
 
     #img-frame2-text {
         position: absolute;
-        height: 224px;
+        height: 265px;
         width: 302px;
-        left: 55vw;
+        left: 53vw;
         top: 953px;
-        padding: 20px;
+        padding: 40px;
         background: rgba(104, 216, 214, 0.3);
         border-radius: 50px;
     }
@@ -1083,37 +1008,35 @@ a.nav-link:focus {
     #img-frame {
         position: relative;
         width: 284px;
-        height: 209px;
-        background: url(img/art1-mini.png)no-repeat;
+        height: 253px;
         margin-top: 3vw;
     }
 
     #img-frame-text {
         position: relative;
         width: 284px;
-        height: 209px;
+        height: 253px;
         margin-top: 3vw;
         background: rgba(104, 216, 214, 0.3);
-        padding: 20px;
-        border-radius: 35px;
+        padding: 30px;
+        border-radius: 50px;
     }
 
     #img-frame2 {
         position: absolute;
-        height: 174px;
+        height: 206px;
         width: 235px;
         left: 52vw;
         top: 895px;
-        background: url(img/art2-mini.png) no-repeat;
     }
 
     #img-frame2-text {
         position: absolute;
-        height: 174px;
+        height: 206px;
         width: 235px;
         left: 52vw;
         top: 895px;
-        padding: 20px;
+        padding: 25px;
         background: rgba(104, 216, 214, 0.3);
         border-radius: 40px;
     }
@@ -1138,7 +1061,6 @@ a.nav-link:focus {
         position: relative;
         width: 185px;
         height: 164px;
-        background: url(img/art1-mini-x.png)no-repeat;
         margin-top: 3vw;
         border-radius: 40px;
         --numb2: calc(156.80px - 30vw);
@@ -1150,9 +1072,7 @@ a.nav-link:focus {
         height: 123px;
         width: 140px;
         left: 52.696vw;
-        margin-top: 5.348vw;
-        border-radius: 33px;
-        background: url(img/art2-mini-x.png) no-repeat;
+        margin-top: 17px;
     }
 
     #img-frame-text {
@@ -1175,7 +1095,7 @@ a.nav-link:focus {
         margin-top: 17px;
         padding: 15px;
         background: rgba(104, 216, 214, 0.3);
-        border-radius: 33px;
+        border-radius: 25px;
     }
 
     .prisma2 {
@@ -2363,7 +2283,6 @@ a:link {
 }
 
 .footer-img {
-    background: url(img/CTIG-UNESP-footer.png);
     height: 101px;
     width: 98px;
     margin-bottom: 5px;
@@ -4746,9 +4665,24 @@ transition: 500ms;
     left: 0;
     z-index: 1030;
 }
-.cursos:hover > .curso-rev1{
+
+/*hover das páginas*/
+
+.cursos:hover > .curso-rev{
     transition: 500ms;
 }
+
+.cursos:hover .curso-rev{
+    opacity: 0;
+    position: absolute;
+}
+
+.cursos:hover h1{
+    transition: 1s;
+    position: static;
+    opacity: 1;
+}
+
 .cursos:hover{
     scale: 1.05;
 }

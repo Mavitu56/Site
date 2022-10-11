@@ -1,4 +1,7 @@
 function toggleDiv() {
+  let elemento = "#image";
+  let largura = document.querySelector(elemento).clientWidth;
+  if(largura<992){
     if(document.getElementById("img-frame").style.display == 'none') {
       document.getElementById("img-frame").style.animation = 'button 500ms';
       document.getElementById("img-frame").style.display = 'block';
@@ -17,6 +20,8 @@ function toggleDiv() {
       document.getElementById("img-frame2-text").style.animation = 'button 500ms';
       document.getElementById("img-frame2-text").style.display = 'block';
     }
+  }
+    
   }
 
 const curso = document.querySelectorAll('[data-animate-curso]');
