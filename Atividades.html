@@ -389,16 +389,16 @@
         </div>
           <div class="xs-only">
           <div id="panel-empty" class="row">
-            <div data-animate-about-left id="foto" class="col-6"></div>
-            <div data-animate-about-right id="foto" class="col-6"></div>
+            <div data-animate-about-left id="foto" class="col-6 lazyload"></div>
+            <div data-animate-about-right id="foto" class="col-6 lazyload"></div>
           </div>
         </div>
           <div class="xs-only">
           <div data-animate-show class="nuvem img-fluid">
             <div class="panel2">
             <div id="panel" class="row">
-                <div data-animate-about-left id="foto" class="col-6"></div>
-                <div data-animate-about-right id="foto" class="col-6"></div>
+                <div data-animate-about-left id="foto" class="col-6 lazyload"></div>
+                <div data-animate-about-right id="foto" class="col-6 lazyload"></div>
               </div>
             </div>
            </div>
@@ -409,13 +409,13 @@
         <div class="container">
           <div class="xs-only">
             <div id="panel-empty" class="row">
-                <div data-animate-about-left id="foto" class="col-6"></div>
-                <div data-animate-about-right id="foto" class="col-6"></div>
+                <div data-animate-about-left id="foto" class="col-6 lazyload"></div>
+                <div data-animate-about-right id="foto" class="col-6 lazyload"></div>
               </div>
             </div>
             <div class="big-frame">
             <div id="panel-empty" class="row">       
-                  <div data-animate-news id="foto2" class="col picture"></div>
+                  <div data-animate-news id="foto2" class="col picture lazyload"></div>
               </div>
             </div>
       </div>
@@ -460,6 +460,26 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="jquery-3.6.0.min.js"></script>
       <script src="script.js"></script>
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazyload"));
+  
+    if ("IntersectionObserver" in window) {
+      let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("background-visible");
+            lazyBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      });
+  
+      lazyBackgrounds.forEach(function(lazyBackground) {
+        lazyBackgroundObserver.observe(lazyBackground);
+      });
+    }
+  });
+      </script>
       <script src="js/bootstrap.bundle.min.js"></script>
     
 </body>

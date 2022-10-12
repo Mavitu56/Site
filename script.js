@@ -180,3 +180,24 @@ if(prisma.length) {
     ulconfetti.appendChild(li);
     
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazyload"));
+  
+    if ("IntersectionObserver" in window) {
+      let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("background-visible");
+            lazyBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      });
+  
+      lazyBackgrounds.forEach(function(lazyBackground) {
+        lazyBackgroundObserver.observe(lazyBackground);
+      });
+    }
+  });
+
+  

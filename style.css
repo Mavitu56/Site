@@ -304,11 +304,16 @@ a.nav-link:focus {
 /*fim do header*/
 
 /*imagem banner*/
+.jumbotron.background-visible{
+    background: url(img/jumbtron.webp) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 @media(min-width:1400px) {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -356,7 +361,6 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 580px;
-        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -402,7 +406,6 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -442,7 +445,6 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -483,7 +485,6 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 660px;
-        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -523,7 +524,6 @@ a.nav-link:focus {
     .jumbotron {
         width: 100%;
         height: 400px;
-        background: url(img/jumbtron.webp) no-repeat;
         text-align: center;
         vertical-align: middle;
         background-size: cover;
@@ -1759,6 +1759,12 @@ a.nav-link:focus {
 }
 
 /*page destaques*/
+.news.background-visible{
+    background: url(img/img.png);
+}
+.news2.background-visible{
+    background: url(img/img.png);
+}
 @media(min-width:1400px) {
     .contrast {
         width: 100%;
@@ -1805,14 +1811,12 @@ a.nav-link:focus {
     .news {
         width: 304px;
         height: 202px;
-        background: url(img/img.png);
         margin-bottom: 60px;
     }
 
     .news2 {
         width: 304px;
         height: 202px;
-        background: url(img/img.png);
         margin-top: 60px;
     }
 }
@@ -1864,14 +1868,12 @@ a.nav-link:focus {
     .news {
         height: 14.439vw;
         width: 21.731vw;
-        background: url(img/img.png);
         margin-bottom: 60px;
     }
 
     .news2 {
         height: 14.439vw;
         width: 21.731vw;
-        background: url(img/img.png);
         margin-top: 60px;
     }
 }
@@ -1921,14 +1923,12 @@ a.nav-link:focus {
     .news {
         height: 13.110vw;
         width: 21.155vw;
-        background: url(img/img.png);
         margin-bottom: 50px;
     }
 
     .news2 {
         height: 13.110vw;
         width: 21.155vw;
-        background: url(img/img.png);
         margin-top: 50px;
     }
 }
@@ -2105,10 +2105,12 @@ a.nav-link:focus {
 }
 
 /*Feed de notícias*/
+#feed.background-visible {
+    background: url(img/img.png);
+}
 @media(min-width:1400px) {
     #feed {
         height: 191px;
-        background: url(img/img.png);
         box-shadow: 18px -18px 0px #07BEB8;
         display: block;
         width: 90%;
@@ -2148,7 +2150,6 @@ a.nav-link:focus {
 @media(min-width:992px) and (max-width:1199px) {
     #feed {
         height: 130px;
-        background: url(img/img.png);
         box-shadow: 18px -18px 0px #07BEB8;
         display: block;
         width: 90%;
@@ -2168,7 +2169,6 @@ a.nav-link:focus {
 @media(min-width:768px) and (max-width:991px) {
     #feed {
         height: 208px;
-        background: url(img/img.png);
         box-shadow: 18px -18px 0px #07BEB8;
         display: block;
     }
@@ -2183,7 +2183,6 @@ a.nav-link:focus {
 @media(min-width:576px) and (max-width:767px) {
     #feed {
         height: 158px;
-        background: url(img/img.png);
         box-shadow: 18px -18px 0px #07BEB8;
         display: block;
         width: 90%;
@@ -2203,7 +2202,6 @@ a.nav-link:focus {
 @media(max-width:575px) {
     #feed {
         height: 37.979vw;
-        background: url(img/img.png);
         box-shadow: 18px -18px 0px #07BEB8;
         display: block;
         margin-left: 60px;
@@ -2322,6 +2320,13 @@ a:link {
 }
 
 /*page nuvem*/
+#foto.background-visible{
+    background: url(img/img.png);
+}
+#foto2.background-visible{
+    background: url(img/img.png);
+}
+
 @media(min-width:1400px) {
     .nuvem {
         background: url(img/nuvem-lg.png) no-repeat;
@@ -2340,13 +2345,11 @@ a:link {
 
 
     #foto {
-        background: url(img/img.png);
         width: 550px;
         height: 350px;
     }
 
     #foto2 {
-        background: url(img/img.png);
         height: 725px;
     }
 
@@ -2381,13 +2384,11 @@ a:link {
     }
 
     #foto {
-        background: url(img/img.png);
         width: 550px;
         height: 350px;
     }
 
     #foto2 {
-        background: url(img/img.png);
         height: 536px;
     }
 
@@ -2418,13 +2419,11 @@ a:link {
 
 
     #foto {
-        background: url(img/img.png);
         width: 418px;
         height: 265px;
     }
 
     #foto2 {
-        background: url(img/img.png);
         height: 492px;
     }
 
@@ -2458,13 +2457,11 @@ a:link {
     }
 
     #foto2 {
-        background: url(img/img.png);
         height: 412px;
     }
 
 
     #foto {
-        background: url(img/img.png);
         width: 336px;
         height: 213px;
     }
@@ -2499,13 +2496,11 @@ a:link {
     }
 
     #foto2 {
-        background: url(img/img.png);
         height: 328px;
     }
 
 
     #foto {
-        background: url(img/img.png);
         width: 252px;
         height: 160px;
     }
@@ -2545,13 +2540,11 @@ a:link {
     }
 
     #foto2 {
-        background: url(img/img.png);
         height: 210px;
     }
 
 
     #foto {
-        background: url(img/img.png);
         width: 145px;
         height: 85px;
     }
@@ -2791,10 +2784,11 @@ a:link {
         margin-top: 120px;
     }
 }
-
+.com-img2.background-visible{
+    background: url(img/img.png);
+}
 @media (min-width:991px) {
     .com-img2 {
-        background: url(img/img.png);
         width: 980px;
         height: 440px;
         margin-top: 20px;
@@ -2869,7 +2863,6 @@ a:link {
 
 @media (min-width:768px) and (max-width:991px) {
     .com-img2 {
-        background: url(img/img.png);
         width: 980px;
         height: 310px;
         margin-top: 20px;
@@ -2967,7 +2960,6 @@ a:link {
 
 @media (max-width:767px) and (min-width:580px) {
     .com-img2 {
-        background: url(img/img.png);
         width: 980px;
         height: 310px;
         margin-top: 20px;
@@ -3064,7 +3056,6 @@ a:link {
 
 @media(max-width:579px) {
     .com-img2 {
-        background: url(img/img.png);
         width: 980px;
         height: 55vw;
         margin-top: 20px;
@@ -3177,7 +3168,6 @@ a:link {
     .img-event-blue {
         height: 290px;
         width: 535px;
-        background: url(img/img.png);
         position: absolute;
         left: 45.695vw;
     }
@@ -3189,7 +3179,6 @@ a:link {
     .img-event-white {
         height: 290px;
         width: 535px;
-        background: url(img/img.png);
         position: absolute;
         left: 45.695vw;
     }
@@ -3201,7 +3190,6 @@ a:link {
     .main-img-event {
         height: 445px;
         width: 590px;
-        background: url(img/img.png);
         position: absolute;
         left: 45.695vw;
     }
@@ -3215,7 +3203,6 @@ a:link {
     .img-event-blue {
         height: 290px;
         width: 535px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3227,7 +3214,6 @@ a:link {
     .img-event-white {
         height: 290px;
         width: 535px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3239,7 +3225,6 @@ a:link {
     .main-img-event {
         height: 445px;
         width: 590px;
-        background: url(img/img.png);
         position: absolute;
         left: 36.695vw;
     }
@@ -3358,7 +3343,6 @@ a:link {
     .main-img-event {
         height: 445px;
         width: 590px;
-        background: url(img/img.png);
         position: absolute;
         left: 36.695vw;
     }
@@ -3402,7 +3386,6 @@ a:link {
     .img-event-white {
         height: 290px;
         width: 540px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3438,7 +3421,6 @@ a:link {
     .img-event-blue {
         height: 290px;
         width: 540px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3475,7 +3457,6 @@ a:link {
     .main-img-event {
         height: 445px;
         width: 590px;
-        background: url(img/img.png);
         position: absolute;
         left: 36.695vw;
     }
@@ -3519,7 +3500,6 @@ a:link {
     .img-event-white {
         height: 290px;
         width: 540px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3555,7 +3535,6 @@ a:link {
     .img-event-blue {
         height: 290px;
         width: 540px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3592,7 +3571,6 @@ a:link {
     .main-img-event {
         height: 345px;
         width: 410px;
-        background: url(img/img.png);
         position: absolute;
         left: 36.695vw;
     }
@@ -3635,7 +3613,6 @@ a:link {
     .img-event-white {
         height: 190px;
         width: 340px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3670,7 +3647,6 @@ a:link {
     .img-event-blue {
         height: 190px;
         width: 340px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3707,7 +3683,6 @@ a:link {
     .main-img-event {
         height: 245px;
         width: 310px;
-        background: url(img/img.png);
         position: absolute;
         left: 36.695vw;
     }
@@ -3752,7 +3727,6 @@ a:link {
     .img-event-white {
         height: 120px;
         width: 210px;
-        background: url(img/img.png);
         position: absolute;
         left: 49.995vw;
     }
@@ -3787,7 +3761,6 @@ a:link {
     .img-event-blue {
         height: 120px;
         width: 210px;
-        background: url(img/img.png);
         position: absolute;
         left: 49.995vw;
     }
@@ -3825,7 +3798,6 @@ a:link {
     .main-img-event {
         height: 135px;
         width: 175px;
-        background: url(img/img.png);
         position: absolute;
         left: 40.695vw;
     }
@@ -3917,8 +3889,24 @@ a:link {
     }
 }
 
+.img-event-blue.background-visible{
+    background: url(img/img.png);
+}
+.img-event-white.background-visible{
+    background: url(img/img.png);
+}
+.main-img-event.background-visible{
+    background: url(img/img.png);
+}
+
 /*pagina projetos*/
 
+.img-project-white.background-visible{
+    background: url(img/img.png);
+}
+.project-middle.background-visible{  
+    background: url(img/project-middle.png) no-repeat;
+}
 
 @media(min-width:1400px) {
     #project-text {
@@ -3952,7 +3940,6 @@ a:link {
     }
 
     .img-project-white {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #F5F5F5;
         width: 459px;
         height: 433px;
@@ -4019,7 +4006,6 @@ a:link {
     }
 
     .project-middle {
-        background: url(img/project-middle.png) no-repeat;
         width: 50%;
         height: 795px;
         margin-left: 25.156vw;
@@ -4061,7 +4047,6 @@ a:link {
     }
 
     .img-project-white {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #F5F5F5;
         width: 459px;
         height: 433px;
@@ -4126,7 +4111,6 @@ a:link {
     }
 
     .project-middle {
-        background: url(img/project-middle.png) no-repeat;
         width: 100%;
         height: 795px;
     }
@@ -4157,7 +4141,6 @@ a:link {
     }
 
     .img-project-white {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #F5F5F5;
         width: 389px;
         height: 373px;
@@ -4223,7 +4206,6 @@ a:link {
     }
 
     .project-middle {
-        background: url(img/project-middle.png) no-repeat;
         width: 100%;
         height: 795px;
     }
@@ -4255,7 +4237,6 @@ a:link {
     }
 
     .img-project-white {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #F5F5F5;
         width: 289px;
         height: 273px;
@@ -4321,7 +4302,6 @@ a:link {
     }
 
     .project-middle {
-        background: url(img/project-middle.png) no-repeat;
         width: 100%;
         height: 795px;
     }
@@ -4353,7 +4333,6 @@ a:link {
     }
 
     .img-project-white {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #F5F5F5;
         width: 100%;
         height: 373px;
@@ -4419,7 +4398,6 @@ a:link {
     }
 
     .project-middle {
-        background: url(img/project-middle.png) no-repeat;
         width: 100%;
         height: 795px;
     }
@@ -4455,7 +4433,6 @@ a:link {
     }
 
     .img-project-white {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #F5F5F5;
         width: 100%;
         height: 64.983vw;
@@ -4523,7 +4500,6 @@ a:link {
     }
 
     .project-middle {
-        background: url(img/project-middle.png) no-repeat;
         width: 100%;
         height: 795px;
     }

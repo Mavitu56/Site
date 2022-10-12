@@ -203,8 +203,8 @@ Nam suscipit, quam quis sollicitudin commodo, lorem orci vehicula lacus, eget au
         </div>
       </div>
       <div data-animate-project-top class="project-side">
-      <img id="project-side-img" src="img/project-side-xl.png">
-      <img  id="project-side-banner" src="img/side-faixa.png">
+      <img loading="lazy" id="project-side-img" src="img/project-side-xl.png">
+      <img loading="lazy" id="project-side-banner" src="img/side-faixa.png">
         <div data-animate-show class="project-side-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat quis nisl eu imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
           <br><br>
@@ -232,12 +232,12 @@ Nam suscipit, quam quis sollicitudin commodo, lorem orci vehicula lacus, eget au
             </div>
           </div>
           <div class="col-md-6 photo-pad">
-            <div data-animate-about-right class="img-project-white"></div>
+            <div data-animate-about-right class="img-project-white lazyload"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="project-middle">
+    <div class="project-middle lazyload">
       <div class="container">
         <div class="row">
           <div class="col left-side">
@@ -294,6 +294,26 @@ Nam suscipit, quam quis sollicitudin commodo, lorem orci vehicula lacus, eget au
         <script src="js/bootstrap.min.js"></script>
         <script src="jquery-3.6.0.min.js"></script>
         <script src="script.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazyload"));
+  
+    if ("IntersectionObserver" in window) {
+      let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("background-visible");
+            lazyBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      });
+  
+      lazyBackgrounds.forEach(function(lazyBackground) {
+        lazyBackgroundObserver.observe(lazyBackground);
+      });
+    }
+  });
+        </script>
         <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
