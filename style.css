@@ -1485,7 +1485,7 @@ a.nav-link:focus {
     }
 
     .info-alt h1 {
-        font-size: 16px;
+        font-size: 18px;
         width: 179px;
         height: 26px;
         letter-spacing: 0.05em;
@@ -1502,8 +1502,7 @@ a.nav-link:focus {
 
     .info-alt p {
         color: #808080;
-        line-height: 18px;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .info-alt2 .bi-globe {
@@ -1544,6 +1543,11 @@ a.nav-link:focus {
         color: #808080;
         line-height: 18px;
         font-size: 13px;
+    }
+
+    .site-mini{
+        overflow: auto;
+        height: 70px;
     }
 }
 
@@ -1658,6 +1662,11 @@ a.nav-link:focus {
         font-size: 10px;
     }
 
+    .site-mini{
+        overflow: auto;
+        height: 75px;
+    }
+
 }
 
 @media(max-width:580px) {
@@ -1755,6 +1764,15 @@ a.nav-link:focus {
         font-size: 8px;
     }
 
+    .site-mini{
+        overflow: auto;
+        height: 50px;
+    }
+
+    .insta-mini{
+        overflow: auto;
+        height: 75px;
+    }
 
 }
 
@@ -3901,9 +3919,7 @@ a:link {
 
 /*pagina projetos*/
 
-.img-project-white.background-visible{
-    background: url(img/img.png);
-}
+
 .project-middle.background-visible{  
     background: url(img/project-middle.png) no-repeat;
 }
@@ -3932,10 +3948,8 @@ a:link {
     }
 
     .img-project {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #68D8D6;
         width: 459px;
-        height: 433px;
         float: right;
     }
 
@@ -4039,10 +4053,8 @@ a:link {
     }
 
     .img-project {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #68D8D6;
         width: 459px;
-        height: 433px;
         float: right;
     }
 
@@ -4133,10 +4145,8 @@ a:link {
     }
 
     .img-project {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #68D8D6;
         width: 389px;
-        height: 373px;
         float: right;
     }
 
@@ -4229,10 +4239,8 @@ a:link {
     }
 
     .img-project {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #68D8D6;
         width: 289px;
-        height: 273px;
         float: right;
     }
 
@@ -4324,10 +4332,8 @@ a:link {
     }
 
     .img-project {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #68D8D6;
         width: 100%;
-        height: 373px;
         float: right;
         margin-top: 90px;
     }
@@ -4424,10 +4430,8 @@ a:link {
     }
 
     .img-project {
-        background: url(img/img.png);
         box-shadow: -15px 15px 0px #68D8D6;
         width: 100%;
-        height: 64.983vw;
         float: right;
         margin-top: 90px;
     }
@@ -4737,3 +4741,18 @@ transition: 500ms;
     }
 }
 
+/*page journal*/
+
+#journal{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.journal-text{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 6vw;
+    margin-bottom: 3vw;
+}
